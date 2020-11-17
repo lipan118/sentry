@@ -1,10 +1,10 @@
-import {getDiffInMinutes, DateTimeObject} from 'app/components/charts/utils';
-import EventView from 'app/utils/discover/eventView';
-import {GlobalSelection} from 'app/types';
-import {formatVersion} from 'app/utils/formatters';
-import {getUtcDateString} from 'app/utils/dates';
+import {DateTimeObject, getDiffInMinutes} from 'app/components/charts/utils';
 import {t} from 'app/locale';
-import {stringifyQueryObject, QueryResults} from 'app/utils/tokenizeSearch';
+import {GlobalSelection} from 'app/types';
+import {getUtcDateString} from 'app/utils/dates';
+import EventView from 'app/utils/discover/eventView';
+import {formatVersion} from 'app/utils/formatters';
+import {QueryResults, stringifyQueryObject} from 'app/utils/tokenizeSearch';
 
 // In minutes
 const FOURTEEN_DAYS = 20160;

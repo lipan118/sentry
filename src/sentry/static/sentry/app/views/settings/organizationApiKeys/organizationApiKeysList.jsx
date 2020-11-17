@@ -1,19 +1,19 @@
-import {Box, Flex} from 'reflexbox';
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
+import {Box, Flex} from 'reflexbox';
 
-import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
-import {t, tct} from 'app/locale';
 import AutoSelectText from 'app/components/autoSelectText';
 import Button from 'app/components/button';
-import EmptyMessage from 'app/views/settings/components/emptyMessage';
 import ExternalLink from 'app/components/links/externalLink';
-import {IconDelete, IconAdd} from 'app/icons';
 import Link from 'app/components/links/link';
 import LinkWithConfirmation from 'app/components/links/linkWithConfirmation';
+import {Panel, PanelBody, PanelHeader, PanelItem} from 'app/components/panels';
+import {IconAdd, IconDelete} from 'app/icons';
+import {t, tct} from 'app/locale';
+import recreateRoute from 'app/utils/recreateRoute';
+import EmptyMessage from 'app/views/settings/components/emptyMessage';
 import SettingsPageHeader from 'app/views/settings/components/settingsPageHeader';
 import TextBlock from 'app/views/settings/components/text/textBlock';
-import recreateRoute from 'app/utils/recreateRoute';
 
 class OrganizationApiKeysList extends React.Component {
   static propTypes = {

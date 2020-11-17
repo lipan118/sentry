@@ -2,11 +2,11 @@ import React from 'react';
 import {RouteComponentProps} from 'react-router/lib/Router';
 
 import {t} from 'app/locale';
-import AsyncView from 'app/views/asyncView';
 import {Release} from 'app/types';
+import AsyncView from 'app/views/asyncView';
 
-import Dashboard from './dashboard';
 import overviewDashboard from './data/dashboards/overviewDashboard';
+import Dashboard from './dashboard';
 
 type Props = RouteComponentProps<{orgId: string}, {}>;
 

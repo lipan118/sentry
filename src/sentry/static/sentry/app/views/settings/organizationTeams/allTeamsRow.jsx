@@ -1,14 +1,14 @@
-import {Link} from 'react-router';
-import PropTypes from 'prop-types';
 import React from 'react';
+import {Link} from 'react-router';
 import styled from '@emotion/styled';
+import PropTypes from 'prop-types';
 
-import {PanelItem} from 'app/components/panels';
 import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
 import {joinTeam, leaveTeam} from 'app/actionCreators/teams';
-import {t, tct, tn} from 'app/locale';
 import Button from 'app/components/button';
 import IdBadge from 'app/components/idBadge';
+import {PanelItem} from 'app/components/panels';
+import {t, tct, tn} from 'app/locale';
 import space from 'app/styles/space';
 import withApi from 'app/utils/withApi';
 

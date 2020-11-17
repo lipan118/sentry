@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import Threads from 'app/components/events/interfaces/threads/threads';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('Threads', () => {
   let event;

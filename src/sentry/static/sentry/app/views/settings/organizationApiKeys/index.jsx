@@ -1,12 +1,12 @@
-import {browserHistory} from 'react-router';
 import React from 'react';
+import {browserHistory} from 'react-router';
 
-import {Client} from 'app/api';
 import {addSuccessMessage} from 'app/actionCreators/indicator';
+import {Client} from 'app/api';
 import {t} from 'app/locale';
-import AsyncView from 'app/views/asyncView';
 import SentryTypes from 'app/sentryTypes';
 import recreateRoute from 'app/utils/recreateRoute';
+import AsyncView from 'app/views/asyncView';
 
 import OrganizationApiKeysList from './organizationApiKeysList';
 

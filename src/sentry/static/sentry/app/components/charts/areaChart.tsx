@@ -1,6 +1,6 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import {EChartOption} from 'echarts';
+import PropTypes from 'prop-types';
 
 import {Series} from 'app/types/echarts';
 

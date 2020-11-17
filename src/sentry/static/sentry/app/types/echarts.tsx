@@ -1,4 +1,4 @@
-import {ECharts, EChartOption} from 'echarts';
+import {EChartOption, ECharts} from 'echarts';
 
 export type SeriesDataUnit = {
   value: number;

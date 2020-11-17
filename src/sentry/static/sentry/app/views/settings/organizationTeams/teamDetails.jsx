@@ -1,21 +1,21 @@
-import {browserHistory} from 'react-router';
-import PropTypes from 'prop-types';
 import React from 'react';
-import Reflux from 'reflux';
-import createReactClass from 'create-react-class';
+import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
+import createReactClass from 'create-react-class';
+import PropTypes from 'prop-types';
+import Reflux from 'reflux';
 
 import {addErrorMessage, addSuccessMessage} from 'app/actionCreators/indicator';
 import {fetchTeamDetails, joinTeam} from 'app/actionCreators/teams';
-import {t, tct} from 'app/locale';
 import Alert from 'app/components/alert';
 import Button from 'app/components/button';
-import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
 import IdBadge from 'app/components/idBadge';
 import ListLink from 'app/components/links/listLink';
 import LoadingError from 'app/components/loadingError';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import NavTabs from 'app/components/navTabs';
+import SentryDocumentTitle from 'app/components/sentryDocumentTitle';
+import {t, tct} from 'app/locale';
 import TeamStore from 'app/stores/teamStore';
 import recreateRoute from 'app/utils/recreateRoute';
 import withApi from 'app/utils/withApi';

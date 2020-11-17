@@ -2,15 +2,16 @@ import React from 'react';
 import * as ReactRouter from 'react-router';
 import {Location} from 'history';
 
-import {GlobalSelection, Organization} from 'app/types';
-import {Panel} from 'app/components/panels';
 import {Client} from 'app/api';
 import EventsChart from 'app/components/charts/eventsChart';
+import {Panel} from 'app/components/panels';
 import {t} from 'app/locale';
+import {GlobalSelection, Organization} from 'app/types';
 
-import ReleaseChartControls, {YAxis} from './releaseChartControls';
 import {ReleaseStatsRequestRenderProps} from '../releaseStatsRequest';
+
 import HealthChartContainer from './healthChartContainer';
+import ReleaseChartControls, {YAxis} from './releaseChartControls';
 import {getReleaseEventView} from './utils';
 
 type Props = Omit<ReleaseStatsRequestRenderProps, 'crashFreeTimeBreakdown'> & {

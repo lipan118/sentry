@@ -1,9 +1,8 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import MultipleEnvironmentSelector from 'app/components/organizations/multipleEnvironmentSelector';
 import {ALL_ACCESS_PROJECTS} from 'app/constants/globalSelectionHeader';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 describe('MultipleEnvironmentSelector', function () {
   let wrapper;

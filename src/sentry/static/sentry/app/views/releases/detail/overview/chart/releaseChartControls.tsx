@@ -1,13 +1,13 @@
 import React from 'react';
 
-import {t} from 'app/locale';
+import OptionSelector from 'app/components/charts/optionSelector';
 import {
   ChartControls,
   InlineContainer,
   SectionHeading,
   SectionValue,
 } from 'app/components/charts/styles';
-import OptionSelector from 'app/components/charts/optionSelector';
+import {t} from 'app/locale';
 import styled from 'app/styled';
 import space from 'app/styles/space';
 import {SelectValue} from 'app/types';

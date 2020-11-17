@@ -1,8 +1,8 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 
-import BaseChart from './baseChart';
 import LineSeries from './series/lineSeries';
+import BaseChart from './baseChart';
 
 export default class LineChart extends React.Component {
   static propTypes = {

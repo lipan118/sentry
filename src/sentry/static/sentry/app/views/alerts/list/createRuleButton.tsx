@@ -1,12 +1,12 @@
 import React from 'react';
 import {InjectedRouter} from 'react-router/lib/Router';
 
+import {navigateTo} from 'app/actionCreators/navigation';
+import Access from 'app/components/acl/access';
+import Button from 'app/components/button';
+import {IconSiren} from 'app/icons';
 import {t} from 'app/locale';
 import {Organization} from 'app/types';
-import {IconSiren} from 'app/icons';
-import Button from 'app/components/button';
-import Access from 'app/components/acl/access';
-import {navigateTo} from 'app/actionCreators/navigation';
 
 type Props = {
   router: InjectedRouter;

@@ -1,11 +1,11 @@
-import PropTypes from 'prop-types';
 import React from 'react';
+import PropTypes from 'prop-types';
 
+import MiniBarChart from 'app/components/charts/miniBarChart';
 import LoadingError from 'app/components/loadingError';
 import LoadingIndicator from 'app/components/loadingIndicator';
-import MiniBarChart from 'app/components/charts/miniBarChart';
-import withApi from 'app/utils/withApi';
 import theme from 'app/utils/theme';
+import withApi from 'app/utils/withApi';
 
 class ApiChart extends React.Component {
   static propTypes = {

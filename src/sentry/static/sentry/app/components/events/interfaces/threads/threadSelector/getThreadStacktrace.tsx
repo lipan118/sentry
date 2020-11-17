@@ -1,5 +1,5 @@
-import {Thread} from 'app/types/events';
 import {Event} from 'app/types';
+import {Thread} from 'app/types/events';
 import {StacktraceType} from 'app/types/stacktrace';
 
 import getThreadException from './getThreadException';

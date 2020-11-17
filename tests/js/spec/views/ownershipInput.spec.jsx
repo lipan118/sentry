@@ -1,8 +1,7 @@
 import React from 'react';
 
-import {mountWithTheme} from 'sentry-test/enzyme';
-
 import OwnerInput from 'app/views/settings/project/projectOwnership/ownerInput';
+import {mountWithTheme} from 'sentry-test/enzyme';
 
 jest.mock('jquery');
 describe('Project Ownership Input', function () {

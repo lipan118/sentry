@@ -1,10 +1,9 @@
 import React from 'react';
-import {Location, LocationDescriptor, Query} from 'history';
 import {browserHistory} from 'react-router';
 import styled from '@emotion/styled';
+import {Location, LocationDescriptor, Query} from 'history';
 
 import {Client} from 'app/api';
-import {t} from 'app/locale';
 import DiscoverButton from 'app/components/discoverButton';
 import DropdownControl, {DropdownItem} from 'app/components/dropdownControl';
 import SortLink from 'app/components/gridEditable/sortLink';
@@ -12,13 +11,14 @@ import Link from 'app/components/links/link';
 import LoadingIndicator from 'app/components/loadingIndicator';
 import Pagination from 'app/components/pagination';
 import PanelTable from 'app/components/panels/panelTable';
+import {t} from 'app/locale';
 import overflowEllipsis from 'app/styles/overflowEllipsis';
 import space from 'app/styles/space';
 import {Organization} from 'app/types';
 import DiscoverQuery, {TableData, TableDataRow} from 'app/utils/discover/discoverQuery';
 import EventView, {MetaType} from 'app/utils/discover/eventView';
-import {Sort, getAggregateAlias} from 'app/utils/discover/fields';
 import {getFieldRenderer} from 'app/utils/discover/fieldRenderers';
+import {getAggregateAlias, Sort} from 'app/utils/discover/fields';
 import {decodeScalar} from 'app/utils/queryString';
 import HeaderCell from 'app/views/eventsV2/table/headerCell';
 import {TableColumn} from 'app/views/eventsV2/table/types';

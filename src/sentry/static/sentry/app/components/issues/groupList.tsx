@@ -1,24 +1,24 @@
+import React from 'react';
+import {browserHistory} from 'react-router';
+import createReactClass from 'create-react-class';
 import isEqual from 'lodash/isEqual';
 import PropTypes from 'prop-types';
-import React from 'react';
-import Reflux from 'reflux';
-import createReactClass from 'create-react-class';
-import {browserHistory} from 'react-router';
 import * as qs from 'query-string';
+import Reflux from 'reflux';
 
-import {Client} from 'app/api';
-import {Panel, PanelBody} from 'app/components/panels';
 import {fetchOrgMembers, indexMembersByProject} from 'app/actionCreators/members';
-import {t} from 'app/locale';
+import {Client} from 'app/api';
 import EmptyStateWarning from 'app/components/emptyStateWarning';
-import GroupStore from 'app/stores/groupStore';
 import LoadingError from 'app/components/loadingError';
 import LoadingIndicator from 'app/components/loadingIndicator';
+import Pagination from 'app/components/pagination';
+import {Panel, PanelBody} from 'app/components/panels';
 import StreamGroup from 'app/components/stream/group';
+import {t} from 'app/locale';
+import GroupStore from 'app/stores/groupStore';
+import {Group} from 'app/types';
 import StreamManager from 'app/utils/streamManager';
 import withApi from 'app/utils/withApi';
-import Pagination from 'app/components/pagination';
-import {Group} from 'app/types';
 
 import GroupListHeader from './groupListHeader';
 
